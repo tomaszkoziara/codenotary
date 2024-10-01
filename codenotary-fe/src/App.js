@@ -4,6 +4,8 @@ import axios from "axios";
 const apiPort = process.env.REACT_APP_API_PORT;
 const apiAddr = `http://localhost:${apiPort}/api/v0`;
 
+console.log(`API URL: ${apiAddr}`);
+
 function App() {
   const [searchAccountName, setSearchAccountName] = useState("");
   const [accountingInfo, setAccountingInfo] = useState([]);
